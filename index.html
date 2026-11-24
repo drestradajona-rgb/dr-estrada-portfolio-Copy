@@ -76,7 +76,7 @@ header{box-shadow:0 10px 40px #0002}
 </style><style>.reveal{opacity:1!important;transform:none!important}a:focus-visible,button:focus-visible{outline:3px solid #d9b76d;outline-offset:3px}</style><style>
 /* Same-file page routing: works without JavaScript or blocked local redirects. */
 .page-view{display:none!important}.page-view#home{display:flex!important}
-body:has(.page-view:target) .page-view#home{display:none!important}
+body:has(.page-view:not(#home):target) .page-view#home{display:none!important}
 .page-view:target{display:block!important}
 .page-view#home:target{display:flex!important}
 .detail-page{min-height:100svh;padding-top:115px;padding-bottom:70px;background:linear-gradient(150deg,#08172c,#122b49 65%,#08172c);color:#f7f7f4}
